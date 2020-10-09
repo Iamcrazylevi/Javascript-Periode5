@@ -2,7 +2,6 @@ class Loader {
     constructor() {
       throw new Error("Class 'Loader' should be used as a static Class. Do not instantiate!");
     }
-    
     static loadImage(src) {
       return new Promise((resolve, reject) => {
         let img = new Image();
@@ -16,7 +15,6 @@ class Loader {
         console.error(error);
       });
     }
-
     static loadSound(src) {
       return new Promise((resolve, reject) => {
         let snd = new Sound();

@@ -2,7 +2,6 @@ class Keyboard {
     constructor() {
       throw new Error("Class 'Key' should be used as a static Class. Do not instantiate!");
     }
-
     static setHandlers() {
       window.addEventListener(
         'keydown',
@@ -29,7 +28,6 @@ class Keyboard {
         },
         false
       );
-
       window.addEventListener(
         'keyup',
         (e) => {
@@ -56,7 +54,6 @@ class Keyboard {
         false
       );
     }
-
     static keyDown(code) {
       switch (code) {
         case KEY.LEFT:
@@ -85,7 +82,6 @@ class Keyboard {
           break;
       }
     }
-    
     static keyUp(code) {
       switch (code) {
         case KEY.LEFT:

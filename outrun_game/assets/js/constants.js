@@ -8,7 +8,6 @@ const KEY = {
     S: 83,
     W: 87,
    };
-
    const COLORS = {
     SKY: '#72D7EE',
     TREE: '#005108',
@@ -18,19 +17,16 @@ const KEY = {
     START: { road: 'white', grass: 'white', rumble: 'white' },
     FINISH: { road: 'black', grass: 'black', rumble: 'black' },
    };
-
    const BACKGROUND = {
     SKY: { x: 1, y: 1, w: 800, h: 300 },
     HILLS: { x: 1, y: 302, w: 800, h: 300 },
     WOODS: { x: 1, y: 603, w: 800, h: 300 },
    };
-
    const ROAD = {
     LENGTH: { NONE: 0, SHORT: 25, MEDIUM: 50, LONG: 100 }, // num segments
     HILL: { NONE: 0, LOW: 20, MEDIUM: 40, HIGH: 60 },
     CURVE: { NONE: 0, EASY: 2, MEDIUM: 4, HARD: 6 },
    };
-
    const SPRITES = {
     BIKE: [
       // DRIVING LEFT
@@ -94,5 +90,4 @@ const KEY = {
     LAMPPOST_MIRRORED: { x: 400, y: 1, w: 35, h: 198 }, // lamppost on the rightside (mirrored)
     TREE: { x: 365, y: 201, w: 38, h: 122 }, // tree
    };
-
    SPRITES.SCALE = 0.1 * (1 / SPRITES.BIKE[6].w);

@@ -52,3 +52,4 @@ class Render {
         return projectedRoadWidth / Math.max(32, 8 * lanes);
       }
    }
+
