@@ -16,12 +16,12 @@ class Road {
      static reset() {
         segments = [];
         Road.addStraight(ROAD.LENGTH.LONG);
-        //Road.addStraight(ROAD.LENGTH.LONG, -ROAD.CURVE.MEDIUM, ROAD.HILL.NONE);
-        //Road.addCurve();
-        //Road.addStraight();
-        //Road.addSCurves();
-        //Road.addHill(ROAD.LENGTH.LONG, ROAD.HILL.MEDIUM);
-        //Road.addLowRollingHills();
+        Road.addStraight(ROAD.LENGTH.LONG, -ROAD.CURVE.MEDIUM, ROAD.HILL.NONE);
+        Road.addCurve();
+        Road.addStraight();
+        Road.addSCurves();
+        Road.addHill(ROAD.LENGTH.LONG, ROAD.HILL.MEDIUM);
+        Road.addLowRollingHills();
         Road.addBumps();
         Road.addDownhillToEnd();
 
