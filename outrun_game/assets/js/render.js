@@ -84,5 +84,13 @@ class Render {
       static laneMarkerWidth(projectedRoadWidth, lanes) {
         return projectedRoadWidth / Math.max(32, 8 * lanes);
       }
+
+      static speedometer(ctx, width, height, resolution, roadWidth, sprites, speedPercent, scale, destX, destY) {
+        let sprite = SPRITES.METER;
+        Render.sprite(ctx, width, height, resolution, roadWidth, sprites, sprite, scale, destX, destY, -1.04, -1.04);
+        Render.speedometer(ctx, width, height, resolution, roadWidth, sprites, 0, 0.0005208333333333333, width, height);
+       }
+       
    }
+   
 
